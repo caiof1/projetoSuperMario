@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario</title>
+    <link rel="stylesheet" href="css/style.css" id="style">
+</head>
+<body>
+    
+    <section class="tela">
+        <span id="pontos" class="pontos">0</span>
+        <img src="img/clouds.png" class="nuvem1" id="nuvem1" width="300" alt="">
+        <img src="img/clouds.png" class="nuvem2" id="nuvem2" width="200" alt="">
+
+        <img src="img/pipe.png" class="pipe" id="pipe" width="70" alt="">
+
+        <img src="img/mario.gif" width="100" id="mario" class="mario" alt="">
+
+        <div class="div-defeat" id="div-defeat">
+            <h1 class="defeat" id="defeat">DEFEAT</h1>
+            <span class="qtd-pontos" id="qtd-pontos"></span>
+            <br>
+            <button onclick="reiniciarGame()" type="button">Restart game</button>
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario</title>
+    <style>
+
+        body {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .tela {
+            width: 100%;
+            height: 500px;
+            border: 1px solid black;
+            position: relative;
+            overflow: hidden;
+            background: skyblue;
+            border-bottom: 30px solid green;
+        }
+        .tela div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        button {
+            margin-bottom: 15px;
+            width: 100px;
+            height: 30px;
+            background: transparent;
+        }
+        button:hover {
+            transition: all 0.4s;
+            border: 2px solid red;
+            color: white;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        .how {
+            display: none;
+        }
+        .help {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="tela">
+        <div id="menu">
+            <img src="img/logo.png" alt="">
+            <button onclick="startGame()" type="button">Start Game</button>
+            <br>
+            <button onclick="howPlay()" type="button">How to play</button>
+            <br>
+            <button onclick="help()" type="button">Help</button>
+        </div>
+
+        <div class="how" id="how">
+            <h1>How to play?</h1>
+            <p>O mario corre automaticamente</p>
+            <p>O unico botão é o "Espaço"</p>
+            <p>Pule os obstalucos o maximo que puder</p>
+            <p>Caso encoste em algum obstaculo, You dead :D</p>
+            <button onclick="voltar()" type="button">Voltar</button>
+        </div>
+        
+        <div class="help" id="help">
+            <h1>You need help?</h1>
+            <p>Entre em contato com: emailficticio.com.br</p>
+            <button onclick="voltarHelp()" type="button">Voltar</button>
+        </div>
+    </section>
+
+
+    <script src="js/menu.js"></script>
+</body>
+</html>
