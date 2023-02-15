@@ -1,3 +1,4 @@
+/* Animação para mover o cano */
 @keyframes move-pipe {
     from {
         right: 0;
@@ -6,6 +7,7 @@
         right: 800px;
     }
 }
+/* Animação referente ao pulo do Mario */
 @keyframes pulo-mario {
     0% {
         bottom: 0;
@@ -48,6 +50,7 @@
     }
 
 }
+/* Animação que move a primeira nuvem */
 @keyframes move-nuvem1 {
     from {
         right: -300px;
@@ -56,6 +59,7 @@
         right: 800px;
     }
 }
+/* Animação que move a segunda nuvem */
 @keyframes move-nuvem2 {
     from {
         right: -200px;
